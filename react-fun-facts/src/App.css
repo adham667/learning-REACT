@@ -1,0 +1,126 @@
+body{
+  height: 100vh;
+}
+
+.nav{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  /* margin-bottom: 2px; */
+  position: relative;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.title{
+  color: #499de1;
+}
+.mode{
+  display: flex;
+  align-items: center;
+}
+.mode span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Hide the checkbox */
+.dark-mode-checkbox {
+  display: none;
+}
+
+/* The container for the switch */
+.dark-mode-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* The slider (background of the switch) */
+.dark-mode-label {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* The circle inside the switch */
+.dark-mode-label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Dark mode toggle: when the checkbox is checked */
+.dark-mode-checkbox:checked + .dark-mode-label {
+  background-color: #4d4d4d; /* Dark background color for switch */
+}
+
+.dark-mode-checkbox:checked + .dark-mode-label::after {
+  transform: translateX(30px); /* Move the circle to the right */
+}
+
+/* Dark mode styles (when dark mode is enabled) */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .dark-mode-switch {
+  background-color: #4d4d4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+  padding: 30px;
+  background-color: white;
+}
+.container h1{
+  margin: 0;
+}
+
+.container ul li{
+  line-height: 1.8em;
+}
+.container ul li::marker{
+  color: #499de1;
+  font-size: 21px;
+}
